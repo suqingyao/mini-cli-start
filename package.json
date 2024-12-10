@@ -1,0 +1,35 @@
+{
+  "name": "mini-cli-start",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "template",
+    "cli",
+    "node"
+  ],
+  "license": "MIT",
+  "author": "suqingyao",
+  "type": "module",
+  "main": "/dist/index.js",
+  "bin": {
+    "console": "bin/console.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "release": "npm run build && npm version patch && npm publish"
+  },
+  "dependencies": {
+    "cac": "^6.7.14",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}
